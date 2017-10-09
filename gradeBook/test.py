@@ -1,5 +1,4 @@
-import classroom from Classroom
-import student from Student
+from classroom import Classroom
+from student import Student
 
-import pytest
-
+algebra = Classroom("Algebra")

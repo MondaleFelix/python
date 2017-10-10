@@ -10,8 +10,10 @@ class Classroom():
 
         # This function add assignments
     def add_assignment(self, assignment):
-        self.student_assignments.append(assignment)
-        print(self.student_assignments)
+        if assignment in self.student_assignments:
+            print("Assignment already inputted")
+        else:
+            self.student_assignments.append(assignment)
 
         # This function deletes specified assignment
     def delete_assignment(self, assignment):

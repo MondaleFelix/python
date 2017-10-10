@@ -15,7 +15,7 @@ class Classroom():
 
         # This function deletes specified assignment
     def delete_assignment(self, assignment):
-        self.student_assignments.remove(assignment)
         if assignment in self.student_assignments:
-            print("Assignment found")
-
+            self.student_assignments.remove(assignment)
+        else:
+            print("Assignment not found")

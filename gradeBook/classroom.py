@@ -1,4 +1,5 @@
 class Classroom():
+    assignment = None
 
     def __init__(self, class_name,):
         self.class_name = class_name
@@ -7,15 +8,14 @@ class Classroom():
         self.student_assignments = []
         self.student_grades = {}
 
+        # This function add assignments
     def add_assignment(self, assignment):
-        assignment = None
         self.student_assignments.append(assignment)
-        print("Added {} to student assignments".format(assignment))
+        print(self.student_assignments)
 
+        # This function deletes specified assignment
+    def delete_assignment(self, assignment):
+        self.student_assignments.remove(assignment)
+        if assignment in self.student_assignments:
+            print("Assignment found")
 
-
-class Student():
-
-    def __init__(self, name, gpa):
-        self.name = name
-        self.gpa = gpa

@@ -5,6 +5,8 @@ class Student():
         self.gpa = gpa
 
 
+    def get_gpa(self):
+        for i in self.assignment
 # class Student():
 
 #     def __init__(self, first_name, last_name, gpa):

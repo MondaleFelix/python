@@ -11,6 +11,10 @@ class Classroom():
         self.student_grades = {}
 
     def get_gpa():
+        final = 0
+        for i in self.assignment.values():
+            final += i
+        return final / len(self.roster)
 
         # This function adds assignments
     def add_assignment(self, assignment, student_id, grade):

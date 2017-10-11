@@ -1,16 +1,28 @@
 class Student():
 
-    def __init__(self, name, gpa):
+    def __init__(self, name, student_id):
         self.name = name
-        self.gpa = gpa
-
+        self.student_id = student_id
+        self.assignment = {}
 
     def get_gpa(self):
-        for i in self.assignment
-# class Student():
+        final = 0
+        for i in self.assignment.values():
+            final += i
+        return final / len(self.assignment)
 
-#     def __init__(self, first_name, last_name, gpa):
-#         self.first_name = first_name
-#         self.last_name = last_name
-#         self.full_name = first_name + last_name
-#         self.gpa = gpa
+    def add_assignment(self, assignment, grade):
+        self.assignment[assignment] = grade
+
+
+    def delete_assignment(self, assignment):
+        self.assignment.pop(assignment)
+
+
+    def update_assignment(self, assignment, grade):
+        delete_assignment(assignment)
+        add_assignment(assignment, grade)
+        #DRY
+
+    def get_assignment(self):
+        return self.assignment

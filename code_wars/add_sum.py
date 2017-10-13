@@ -1,3 +1,6 @@
+# Adds all the numbers from 1 to the given integer
+# Returns False if parameter is negative
+
 def add_all(int):
     if int < 0:
         return(False)
